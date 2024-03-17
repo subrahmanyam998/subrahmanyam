@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="animated-heading">Login</h2>
+        <form action="#" method="post" class="animated-form" id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="checkout-button animated-button">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        // Get the login form
+        const loginForm = document.getElementById('login-form');
+
+        // Add event listener to the form submission
+        loginForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+            
+            // Redirect the user to the home.html page
+            window.location.href = 'home.html';
+        });
+    </script>
+</body>
+</html>

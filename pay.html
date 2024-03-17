@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Page</h1>
+    </header>
+
+    <main>
+        <div class="payment-form">
+            <h2>Enter Payment Details</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your payment.</p>
+        </div>
+    </div>
+
+    <script src="pay.js"></script>
+</body>
+<button>
+    <a href="home.html">Back to Home Page  </a>
+  </button>  
+</html>
